@@ -21,7 +21,7 @@ export default function SearchMenu(){
     return(
         <motion.div className='w-full flex flex-row items-center justify-between gap-10 sticky md:static top-0 z-50 bg-dark-blue'>
             <div className="flex md:hidden flex-row items-center gap-10">
-                <svg id="menu" onClick={handleClick} className='group cursor-pointer' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="menu" onClick={handleClick} className='group cursor-pointer z-[100]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_107_495)">
                     <path id='menu_up' className='group-hover:stroke-sec-yellow transition-color duration-500 ease-in-out' d="M4 8H20" stroke="#EFEEE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path id='menu_down' className='group-hover:stroke-sec-yellow transition-color duration-500 ease-in-out' d="M4 16H20" stroke="#EFEEE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
