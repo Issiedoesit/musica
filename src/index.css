@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+     
+    /* input[type="range"]{
+        background-color: red;
+        border-radius: 50px;
+        background-color: #ffffff18;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        width: 12px;
+        -webkit-appearance: none;
+        appearance: none;
+        height: 12px;
+        cursor: ew-resize;
+        background-color: #FACD66;
+        box-shadow:  0 0 4px #605E5C;
+        border-radius: 50%;
+        outline-offset: 2px;
+        outline: solid 1px white;
+    }
+    input[type="range"]::-ms-track{
+        background-color: #FACD66;
+        border-radius: 50px;
+    }
+    input[type="range"]::-webkit-slider-runnable-track{
+        background-color: #ffffff18;
+        border-radius: 50px;
+    }
+    input[type="range"]::-moz-range-track{
+        background-color: #FACD66;
+        border-radius: 50px;
+
+        
+    }
+    input[type="range"]::-webkit-slider-runnable-track  {
+        -webkit-appearance: none;
+        box-shadow: none;
+        border: none;
+        background: red;
+      } */
+
+      input[type="range"] {
+        -webkit-appearance: none;
+        margin-right: 15px;
+        height: 7px;
+        background: #ffffff18;
+        border-radius: 5px;
+        background-image: linear-gradient(#FACD66, #FACD66);
+        background-size: 70% 100%;
+        background-repeat: no-repeat;
+      }
+      
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: #FACD66;
+        outline-offset: 2px;
+        outline: solid 1px white;
+        cursor: ew-resize;
+        box-shadow: 0 0 2px 0 #555;
+        transition: background .3s ease-in-out;
+      }
+      
+      input[type=range]::-webkit-slider-runnable-track  {
+        -webkit-appearance: none;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+      }
+}
+
+.active-nav{
+    transform: rotate(45deg) translateY(4px);
+    transform-origin: center;
+}
+.active-nav-b{
+    transform: rotate(-45deg) translateY(-4px);
+    transform-origin: center;
+}
