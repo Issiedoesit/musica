@@ -12,14 +12,16 @@ export default function Nav(){
 //     }
 const [isOpen, setIsOpen] = useState(false);
 const toggle = () => setIsOpen(!isOpen);
-const hide = () => setIsOpen(false);
 const nav = document.querySelector('nav')
 if(isOpen){
-    nav.classList.add('-translate-x-[150%]')
+    nav.addEventListener('click', function(){
+        nav.classList.add('-translate-x-[150%]')
+        isOpen = !isOpen
+    })
 }
     return(
         <>
-            <nav onClick={toggle} onBlur={hide} className='-translate-x-[150%] landscape:overflow-y-auto shadow-sm shadow-slate-500 md:shadow-none  md:translate-x-0 transition-transform duration-1000 flex z-50 flex-col md:gap-5 bg-dark-blue h-screen fixed w-9/12 md:w-24 md:items-center pb-10 pl-3 md:pl-0 pt-[20%] md:pt-[72px]'>
+            <nav onClick={toggle} className='-translate-x-[150%] landscape:overflow-y-auto shadow-sm shadow-slate-500 md:shadow-none  md:translate-x-0 transition-transform duration-1000 flex z-50 flex-col md:gap-5 bg-dark-blue h-screen fixed w-9/12 md:w-24 md:items-center pb-10 pl-3 md:pl-0 pt-[20%] md:pt-[72px]'>
                 <NavLink exact to='/' className="fixed top-7 hidden md:block">
                     <img src={Logo} alt='logo' className='w-[30px] h-[30px]' />
                 </NavLink>
