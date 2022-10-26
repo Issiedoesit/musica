@@ -16,7 +16,7 @@ function App(){
         <>
         <Nav />
         <Routes>
-            <Route index element={<Home />}></Route>
+            <Route index path='/home' element={<Home />}></Route>
             <Route path='/collection' element={<Collection />}></Route>
             <Route path='/radio' element={<Radio />}></Route>
             <Route path='/music-videos' element={<MusicVideos />}></Route>
