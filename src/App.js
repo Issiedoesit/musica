@@ -16,11 +16,11 @@ function App(){
         <>
         <Nav />
         <Routes>
-            <Route index path='/home' element={<Home />}></Route>
-            <Route path='/collection' element={<Collection />}></Route>
-            <Route path='/radio' element={<Radio />}></Route>
-            <Route path='/music-videos' element={<MusicVideos />}></Route>
-            <Route path='/account' element={<Account />}></Route>
+            <Route exact index path='/ ' element={<Home />}></Route>
+            <Route exact  path='/collection' element={<Collection />}></Route>
+            <Route exact path='/radio' element={<Radio />}></Route>
+            <Route exact path='/music-videos' element={<MusicVideos />}></Route>
+            <Route exact path='/account' element={<Account />}></Route>
         </Routes>
         </>
     )
