@@ -1,23 +1,30 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import Logo from './../assets/logos/logo.svg';
 
 
 export default function Nav(){
+//     const { pathname } = useLocation();
+//    if (pathname !== '/'){
+//     //    let home = document.getElementById('home')
+//        const isActive = false
+//     }
+
     return(
         <>
             <nav className='-translate-x-[150%] landscape:overflow-y-auto shadow-sm shadow-slate-500 md:shadow-none  md:translate-x-0 transition-transform duration-1000 flex z-50 flex-col md:gap-5 bg-dark-blue h-screen fixed w-9/12 md:w-24 md:items-center pb-10 pl-3 md:pl-0 pt-[20%] md:pt-[72px]'>
-                <NavLink to='/home' className="fixed top-7 hidden md:block">
+                <NavLink exact to='/' className="fixed top-7 hidden md:block">
                     <img src={Logo} alt='logo' className='w-[30px] h-[30px]' />
                 </NavLink>
                 <div className='space-y-10 px-[15px] py-5 rounded-[32px] md:bg-dark-blue-alt flex flex-col'>
-                    <NavLink to='/home' className={({ isActive }) => (isActive ? 'flex flex-row items-center gap-10 current-nav' : 'not-current-nav flex flex-row items-center gap-10 ')}>
+                    <NavLink exact activeClassName to='/' end={true} id='home'  className={({ isActive }) => (isActive ? 'flex flex-row items-center gap-10 current-nav' : 'not-current-nav flex flex-row items-center gap-10 ')}>
                         <svg title="Home" className='cursor-pointer' width="30" height="30" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.38171 18.0503V15.239C6.3817 14.5266 6.96099 13.9478 7.67852 13.9433H10.3132C11.0339 13.9433 11.6182 14.5234 11.6182 15.239V18.0421C11.6182 18.66 12.1203 19.1622 12.7427 19.1667H14.5401C15.3796 19.1688 16.1855 18.8392 16.7799 18.2507C17.3742 17.6621 17.7083 16.8629 17.7083 16.0294V8.0437C17.7083 7.37045 17.4077 6.73183 16.8875 6.29989L10.781 1.45142C9.7136 0.603372 8.18905 0.630768 7.15323 1.51661L1.17805 6.29989C0.633305 6.7191 0.307716 7.35961 0.291626 8.0437V16.0213C0.291626 17.7584 1.71006 19.1667 3.45978 19.1667H5.21623C5.51587 19.1688 5.80399 19.0522 6.01664 18.8426C6.2293 18.633 6.34889 18.3478 6.34888 18.0503H6.38171Z" fill="#EFEEE0"/>
                         </svg>
                         <h1 className='block md:hidden text-white text-lg'>Home</h1>
                     </NavLink>
-                    <NavLink to='/collection' className={({ isActive }) => (isActive ? 'flex flex-row items-center gap-10 current-nav' : 'not-current-nav flex flex-row items-center gap-10 ')} >
+                    <NavLink  to='/collection' className={({ isActive }) => (isActive ? 'flex flex-row items-center gap-10 current-nav' : 'not-current-nav flex flex-row items-center gap-10 ')} >
                         <svg title='My collections' className='cursor-pointer' width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.5833 4.35416H14.6666V2.98832C14.6666 2.22749 14.0433 1.60416 13.2825 1.60416H8.71748C7.95665 1.60416 7.33331 2.22749 7.33331 2.98832V4.35416H6.41665C5.40831 4.35416 4.58331 5.17916 4.58331 6.18749V6.30666C4.87665 6.22416 5.17915 6.18749 5.49998 6.18749H16.5C16.8208 6.18749 17.1233 6.22416 17.4166 6.30666V6.18749C17.4166 5.17916 16.5916 4.35416 15.5833 4.35416Z" fill="#EFEEE0" fill-opacity="0.25"/>
                             <path d="M12.7691 15.5192C12.4758 15.5192 12.2466 15.7575 12.2466 16.0417C12.2466 16.3258 12.485 16.5642 12.7691 16.5642C13.0533 16.5642 13.2916 16.3258 13.2916 16.0417C13.2916 15.7575 13.0533 15.5192 12.7691 15.5192Z" fill="#EFEEE0" fill-opacity="0.25"/>

@@ -90,9 +90,11 @@
     fill: #EFEEE0;
     fill-opacity: 0.25;
 }
+
 .current-nav > h1{
     color: white;
 }
+
 .not-current-nav > h1{
     color: #EFEEE040;
 }
