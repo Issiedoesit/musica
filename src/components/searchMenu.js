@@ -2,21 +2,44 @@ import React from 'react';
 import Logo from './../assets/logos/logo.svg'
 import { motion } from "framer-motion";
 import searchIcon from './../assets/icons/search.svg'
+import { NavLink } from 'react-router-dom';
 
 
 
 export default function SearchMenu(){
    function handleClick(e){
-       e.preventDefault()
-    const menu = document.getElementById('menu')
-        menu.addEventListener('click', ()=>{
+        e.preventDefault()
+        const nav = document.querySelector('nav')
+        // const nav_links = document.querySelectorAll('nav div a')
+        const menu = document.getElementById('menu')
         const menu_up = document.getElementById('menu_up')
         const menu_down = document.getElementById('menu_down')
-        menu_up.classList.toggle('active-nav')
-        menu_down.classList.toggle('active-nav-b')
-        const nav = document.querySelector('nav')
-        nav.classList.toggle('-translate-x-[150%]')
-    })
+        // nav_links.forEach(nav_link => {
+        //     nav_link.addEventListener('click', function(){
+        //         if (nav.classList.contains('-translate-x-[150%]')){
+        //             alert('open')
+        //             menu_up.classList.add('active-nav')
+        //             menu_down.classList.add('active-nav-b')
+        //             nav.classList.remove('-translate-x-[150%]')
+        //         }else{
+        //             alert('closed')
+        //             menu_up.classList.remove('active-nav')
+        //             menu_down.classList.remove('active-nav-b')
+        //             nav.classList.add('-translate-x-[150%]')
+        //         }
+        //     })
+        // })
+        menu.addEventListener('click', ()=>{
+            if (nav.classList.contains('-translate-x-[150%]')){
+                menu_up.classList.add('active-nav')
+                menu_down.classList.add('active-nav-b')
+                nav.classList.remove('-translate-x-[150%]')
+            }else{
+                menu_up.classList.remove('active-nav')
+                menu_down.classList.remove('active-nav-b')
+                nav.classList.add('-translate-x-[150%]')
+            }
+        })
    }
     return(
         <motion.div className='w-full flex flex-row items-center justify-between gap-10 sticky md:static top-0 z-50 bg-dark-blue'>
@@ -32,7 +55,9 @@ export default function SearchMenu(){
                     </clipPath>
                     </defs>
                 </svg>
-                <img src={Logo} alt='logo' className='w-[30px] h-[30px]' />
+                <NavLink to='/'>
+                    <img src={Logo} alt='logo' className='w-[30px] h-[30px]' />
+                </NavLink>
             </div>
             <label className='relative'>
                 <img src={searchIcon} alt="search" className='absolute top-[50%] -translate-y-[50%] h-5 w-5'/>
