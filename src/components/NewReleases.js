@@ -33,7 +33,7 @@ export default function NewReleases(){
     }, []);
 
     return(
-        <motion.main initial="offscreen" variants={cardVariants} whileInView="onscreen" viewport={{ once: true, amount: 0.3 }} transition={{ ease: "easeOut", duration: 2 }} className="py-16 space-y-10 pl-10">
+        <motion.main initial="offscreen" variants={cardVariants} whileInView="onscreen" viewport={{ once: true, amount: 0.3 }} transition={{ ease: "easeOut", duration: 2 }} className="py-16 space-y-10 md:pl-10">
             <h1 className='text-white font-bold text-2xl'>New releases.</h1>
             <motion.div  ref={carousel}  whileTap={{cursor: 'grabbing' }} className="carousel cursor-grab overflow-hidden">
                 <motion.div drag="x" dragConstraints={{ right:0, left:-width }} className='inner-carousel h-full w-full flex flex-row gap-10'>
