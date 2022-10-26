@@ -82,3 +82,17 @@
     transform: rotate(-45deg) translateY(-4px);
     transform-origin: center;
 }
+.current-nav > svg > path{
+    fill: #FACD66;
+    fill-opacity: 1;
+}
+.not-current-nav > svg > path{
+    fill: #EFEEE0;
+    fill-opacity: 0.25;
+}
+.current-nav > h1{
+    color: white;
+}
+.not-current-nav > h1{
+    color: #EFEEE040;
+}

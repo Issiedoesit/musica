@@ -31,7 +31,7 @@ export default function Player(){
 
 
     return(
-        <section className='h-28 z-[100] py-5 w-full border-t-0.25 border-gray-800 drop-shadow-player flex flex-row gap-10 justify-between fixed bottom-0 left-0 px-8 lg:px-10 bg-transparent/30 backdrop-blur-md music-player'>
+        <section className='h-28 z-[40] md:z-[100] py-5 w-full border-t-0.25 border-gray-800 drop-shadow-player flex flex-row gap-10 justify-between fixed bottom-0 left-0 px-8 lg:px-10 bg-transparent/30 backdrop-blur-md music-player'>
             <div className='flex flex-row gap-4 items-center'>
                 <img src={half_face} alt="playing" className='w-16 h-16 rounded-[14px]'/>
                 <div className='space-y-2 text-white'>

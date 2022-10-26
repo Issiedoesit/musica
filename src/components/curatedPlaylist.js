@@ -6,6 +6,7 @@ import Ellipse5 from './../assets/people/Ellipse5.png';
 import Ellipse6 from './../assets/people/Ellipse6.png';
 import { motion } from "framer-motion";
 import musician from './../assets/images/musician.png';
+import heart_white from './../assets/icons/iconly/Heart-white.svg';
 
 
 export default function CuratedPlaylist(){
@@ -31,7 +32,10 @@ export default function CuratedPlaylist(){
                             <img src={Ellipse5} className="w-8 h-8 absolute top-[50%] -translate-y-[50%] left-12" alt="person"/>
                             <img src={Ellipse6} className="w-8 h-8 absolute top-[50%] -translate-y-[50%] left-16" alt="person"/>
                         </div>
-                        <p className='font-light'>33k Likes</p>
+                        <div className='flex flex-row items-center gap-5'>
+                            <img src={heart_white} alt='white heart'/>
+                            <p className='font-light'>33k Likes</p>
+                        </div>
                     </div>
                 </div>
                 

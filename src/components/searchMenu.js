@@ -15,7 +15,7 @@ export default function SearchMenu(){
         menu_up.classList.toggle('active-nav')
         menu_down.classList.toggle('active-nav-b')
         const nav = document.querySelector('nav')
-        nav.classList.toggle('-translate-x-[100%]')
+        nav.classList.toggle('-translate-x-[150%]')
     })
    }
     return(
