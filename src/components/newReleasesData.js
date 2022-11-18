@@ -43,21 +43,28 @@ const NewReleasesData = [
     },
     {
         id: 7,
-        image: "./../assets/newReleaseImages/hat.png",
+        image: "./../assets/newReleaseImages/concert.png",
         song:"Everything's black",
         artist:'Paloma',
 
     },
     {
-        id: 7,
-        image: "./../assets/newReleaseImages/float-large.png",
+        id: 8,
+        image: "./../assets/newReleaseImages/sheet-close.png",
         song:"Cancelled",
         artist:'LinkPin',
 
     },
     {
         id: 9,
-        image: "./../assets/newReleaseImages/abstract-face.png",
+        image: "./../assets/newReleaseImages/drums.png",
+        song:"Nomad",
+        artist:'6 weeks journey',
+
+    },
+    {
+        id: 10,
+        image: "./../assets/newReleaseImages/sheet-far.png",
         song:"Nomad",
         artist:'6 weeks journey',
 

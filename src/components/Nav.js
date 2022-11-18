@@ -28,7 +28,7 @@ nav_links.forEach(nav_link=>{
 })
     return(
         <>
-            <nav  className='-translate-x-[150%] landscape:overflow-y-auto shadow-sm shadow-slate-500 md:shadow-none  md:translate-x-0 transition-transform duration-1000 flex z-50 flex-col md:gap-5 bg-dark-blue h-screen fixed w-9/12 md:w-24 md:items-center pb-10 pl-3 md:pl-0 pt-[20%] md:pt-[72px]'>
+            <nav  className='-translate-x-[150%] landscape:overflow-y-auto shadow-sm shadow-slate-500 md:bg-transparent md:shadow-none  md:translate-x-0 transition-transform duration-1000 flex z-50 flex-col md:gap-5 bg-dark-blue h-screen fixed w-9/12 md:w-24 md:items-center pb-32 pl-3 md:pl-0 pt-[20%] md:pt-[72px]'>
                 <NavLink exact to='/' className="fixed top-7 hidden md:block">
                     <img src={Logo} alt='logo' className='w-[30px] h-[30px]' />
                 </NavLink>

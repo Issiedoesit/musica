@@ -42,9 +42,9 @@ export default function SearchMenu(){
         })
    }
     return(
-        <motion.div className='w-full flex flex-row items-center justify-between gap-10 sticky md:static top-0 z-50 bg-dark-blue'>
+        <motion.div id='search_menu' className='w-full flex flex-row  items-center justify-between gap-10 sticky md:static top-0 left-0 z-[250] backdrop-blur-2xl md:backdrop-blur-none px-6'>
             <div className="flex md:hidden flex-row items-center gap-10">
-                <svg id="menu" onClick={handleClick} className='group cursor-pointer z-[100]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="menu" onClick={handleClick} className='group cursor-pointer' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_107_495)">
                     <path id='menu_up' className='group-hover:stroke-sec-yellow transition-color duration-500 ease-in-out' d="M4 8H20" stroke="#EFEEE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path id='menu_down' className='group-hover:stroke-sec-yellow transition-color duration-500 ease-in-out' d="M4 16H20" stroke="#EFEEE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -61,7 +61,7 @@ export default function SearchMenu(){
             </div>
             <label className='relative'>
                 <img src={searchIcon} alt="search" className='absolute top-[50%] -translate-y-[50%] h-5 w-5'/>
-                <motion.input type="search" name="search" id="search" placeholder='Search artists' className='pt-[26px] pl-10 outline-none text-white pb-[29px] w-10 hover:w-full transition-all duration-500 md:w-full bg-dark-blue'/>
+                <motion.input type="search" name="search" id="search" placeholder='Search artists' className='pt-[26px] pl-10 outline-none text-white pb-[29px] w-10 hover:w-full focus-within:w-full transition-all duration-500 md:w-full bg-transparent'/>
             </label>
     </motion.div>
     )
