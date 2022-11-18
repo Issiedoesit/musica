@@ -21,11 +21,11 @@ export default function Hero(){
                 <div className='text-white flex flex-row items-center gap-3'>
                     <div className='flex flex-row items-center gap-3 py-2 px-4 bg-white/[7%] rounded-[32px] w-fit'>
                         <img src={play} alt="play" className='w-[14px] h-[14px]'/>
-                        <a href='#'>Play all</a>
+                        <a href='#' className='text-xs sm:text-sm md:text-base'>Play all</a>
                     </div>
                     <div className='flex flex-row items-center gap-3 py-2 px-4 bg-white/[7%] rounded-[32px] w-fit'>
                         <img src={music_add} alt="play" className='w-[14px] h-[14px]'/>
-                        <a href='#'>Add to collection</a>
+                        <a href='#' className='text-xs sm:text-sm md:text-base'>Add to collection</a>
                     </div>
                     <div className='flex flex-row items-center gap-3 justify-center bg-white/[7%] rounded-[50%] h-10 w-10'>
                         <img src={heart_red} alt="play" className='w-4 h-4'/>
