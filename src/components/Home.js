@@ -5,7 +5,12 @@ import NewReleases from './NewReleases';
 import CuratedPlaylist from './curatedPlaylist';
 import SearchMenu from './searchMenu';
 
-
+// let chart_section = document.querySelectorAll('.chart-section')
+// chart_section.forEach((chart)=>{
+//     chart.addEventListener('click', function(){
+//         chart.style.display = 'none'
+//     })
+// })
 export default function Home(){
     return(
         <main className='bg-dark-blue box-border font-Quicksand'>

@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Nav from './components/Nav';
 import MusicVideos from './components/music-videos/music-videos';
 import Account from './components/account/account';
+import ViewChart from './components/view-chart/viewChart';
 
 
 
@@ -21,6 +22,7 @@ function App(){
             <Route path='/radio' element={<Radio />}></Route>
             <Route path='/music-videos' element={<MusicVideos />}></Route>
             <Route path='/account' element={<Account />}></Route>
+            <Route path='/chart' element={<ViewChart />}></Route>
         </Routes>
         </>
     )
