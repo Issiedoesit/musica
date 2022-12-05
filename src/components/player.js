@@ -65,19 +65,19 @@ export default function Player(){
             <div className='flex flex-col gap-4 w-7/12 self-center'>
                 <div className='flex flex-row justify-end items-center md:mx-auto gap-6 md:gap-8 lg:gap-16'>
                     <div className='hidden md:block'>
-                        <img src={shuffle}  alt='shuffle' className='w-5 h-5 cursor-pointer'/>
+                        <motion.img src={shuffle} whileHover={{ scale: ['1', '1.3'] }} transition={{ ease: "easeOut", duration:0.5 }} alt='shuffle' className='w-5 h-5 cursor-pointer'/>
                     </div>
                     <div className='hidden md:block'>
-                        <img src={previous}  alt='previous' className='w-5 h-5 cursor-pointer'/> 
+                        <motion.img src={previous} whileHover={{ scale: ['1', '1.3'] }} transition={{ ease: "easeOut", duration:0.5 }} alt='previous' className='w-5 h-5 cursor-pointer'/> 
                     </div>
-                    <motion.div whileHover={{ scale: ['1', '1.1'] }} transition={{ ease: "easeOut", duration:0.5 }} className='play-pause button cursor-pointer p-3 rounded-[50%] bg-sec-yellow shadow-md shadow-white/30'>
+                    <motion.div whileHover={{ scale: ['1', '1.1'] }} transition={{ ease: "easeInOut", duration:0.5 }} className='play-pause button cursor-pointer p-3 rounded-[50%] bg-sec-yellow shadow-md shadow-white/30'>
                         <motion.img src={play}   alt='play' className='w-5 h-5'/>
                     </motion.div>
                     <div >
-                        <img src={next}  alt='next' className='w-5 h-5 cursor-pointer'/>
+                        <motion.img src={next} whileHover={{ scale: ['1', '1.3'] }} transition={{ ease: "easeOut", duration:0.5 }}  alt='next' className='w-5 h-5 cursor-pointer'/>
                     </div>
                     <div className='hidden md:block'>
-                        <img src={repeat_one}  alt='repeat once' className='w-5 h-5 cursor-pointer'/>
+                        <motion.img src={repeat_one} whileHover={{ scale: ['1', '1.3'] }} transition={{ ease: "easeOut", duration:0.5 }}  alt='repeat once' className='w-5 h-5 cursor-pointer'/>
                     </div>
                 </div>
                 <div className='hidden md:block'>
