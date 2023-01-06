@@ -98,3 +98,54 @@
 .not-current-nav > h1{
     color: #EFEEE040;
 }
+
+.template-img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    animation: fade 2s linear infinite alternate;
+}
+
+.template-list{
+    margin: 25px 0px;
+    position: relative;
+    margin-left: 40px;
+    width: 70%;
+    height: 20px;
+    animation: fade 1.5s linear infinite alternate;
+}
+.template-para{
+    margin: 30px 0px;
+    position: relative;
+    width: 70%;
+    height: 20px;
+    animation: fade 1.5s linear infinite alternate;
+}
+
+.template-list::before{
+    content: '';
+    animation: fade 2s linear infinite alternate;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+}
+
+.template-list:nth-child(4),
+.template-list:nth-child(5),
+.template-list:nth-child(7){
+    width: 75%;
+}
+.template-list:nth-child(8){
+    width: 88%;
+}
+
+
+@keyframes fade {
+    0% {
+        background-color: hsl(0, 1%, 79%);
+    }
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
